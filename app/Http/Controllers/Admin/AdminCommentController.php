@@ -17,7 +17,12 @@ class AdminCommentController extends Controller
         $comments=Comment::with('user')->where('status',0)->orderBy('created_at','desc')->paginate(30);
             return view('panel-admin.comments.request-comment',compact('comments'));
     }
+    public function commentPending($id){
+        $comment=Comment::find($id);
+        return view ('panel-admin.comments.comment-pendin',compact('comment'));
+    }
     public function approveComment($id){
+        dd($id);
         if (Comment::find($id)->status == 0){
             $comment=Comment::find($id);
             $comment->status= 1;
@@ -37,6 +42,6 @@ class AdminCommentController extends Controller
         $comment=Comment::find($id);
         $comment->delete();
         Session::flash('deleteComment' , 'کامنت با موفقیت حذف شد .');
-        return redirect('admin.comments.commentsall');
+        return redirect('admin/comments/commentsall');
     }
 }

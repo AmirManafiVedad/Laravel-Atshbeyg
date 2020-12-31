@@ -1,0 +1,40 @@
+
+/*************   Create User *************/
+
+._Create_select select{
+    width: 100%;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid #1c7430;
+}
+._Create_select option{
+    font-size: 15px;
+    height: 40px;
+    padding: 5px 10% 5px 90%;
+    width: 50%;
+    overflow: hidden;
+}
+._Create_password input{
+    width: 100%;
+    height: 50px;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/************* User All *************/
+
+._Table_usersall_name{
+    width: 15%;
+}._Table_usersall_username{
+    width: 12.5%;
+}._Table_usersall_email{
+    width: 20%;
+}._Table_usersall_avatars{
+    width: 10%;
+}._Table_usersall_time{
+    width: 12.5%;
+}._Table_usersall_operation{
+    width: 10%;
+}

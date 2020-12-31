@@ -1,0 +1,107 @@
+/************** Informatinguser **************/
+
+._Informating_user{
+    height: 565px;
+    width: 90%;
+    margin: 20px 5%;
+    background: url("../../Image/Wood/25.png");
+    background-size: 100% 650px;
+    border-radius: 20px;
+}
+._Informating_user_pic{
+    width: 100%;
+    height: 200px;
+}
+._Informating_user_img{
+    width: 50%;
+    height: 200px;
+    /*background: url("../../Image/Wood/16.png");*/
+    background-size: 100% 200px;
+    margin: 0 auto;
+    margin-top: 15px;
+
+}
+._Informating_user_img > img{
+    height: 200px;
+    border-radius: 50%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0;
+    display:block;
+}
+._Informating_user_p{
+    width: 80%;
+    height: 60px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: url("../../Image/Wood/24.png");
+    background-size: 100% 60px;
+}
+._Informating_user_p > p{
+    padding-top: 10px;
+}
+._Informating_user_data_style{
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    transition: all ease 0.5s;
+    color: white;
+    background: url("../../Image/Wood/13.png");
+    background-size: 100% 80px;
+}
+._Informating_user_data_style :hover{
+
+}
+._Informating_user_data_style > a{
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+    text-align: center;
+    display: block;
+    padding: 32.5px 0;
+}
+
+._Informating_user_post{
+    height: 150px;
+    margin: 10px;
+}
+._Informating_user_post_i{
+    height: 150px;
+    margin: 10px;
+}
+._Informating_user_post > i{
+    text-align: center;
+    color: #ccc524;
+    display: block;
+    padding: 25px 0 10px 0;
+}
+._Informating_user_post > h6{
+    color: #ffffff;
+    text-align: center;
+    height: 58px;
+    margin: 0 auto;
+}
+._Informating_user_post > p{
+    text-align: center;
+    margin: 0 auto;
+    color: #ccc524;
+}
+._Informating_user_post_i > i{
+    text-align: center;
+    color: #a8160e;
+    display: block;
+    padding: 25px 0 10px 0;
+}
+._Informating_user_post_i > h6{
+    color: #ccc524;
+    text-align: center;
+    margin: 0 auto;
+    height: 58px;
+}
+._Informating_user_post_i > p{
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}

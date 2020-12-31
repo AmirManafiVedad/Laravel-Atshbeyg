@@ -1,0 +1,133 @@
+body{
+    background: #acacac;
+}
+._Post_img{
+    width: 90%;
+    height: 420px;
+    margin: 50px 5%;
+    background: white;
+    border-radius: 20px;
+}
+._Post_img img{
+    width: 80%;
+    height: 80%;
+    margin: 9% 10%;
+    border-radius: 20px;
+}
+._Post_text_col{
+    width: 90%;
+    height: 455px;
+    margin: 50px 5%;
+}
+._Post_text{
+    width: 100%;
+    height: 420px;
+    background: white;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+._Post_text>h2{
+    padding: 10px 5%;
+}
+._Post_text>h6{
+    margin-top: 20px;
+    padding: 10px 7.5% 10px 2.5%;
+    text-align: justify;
+}
+._Post_text_categories>span{
+    padding: 10px 5%;
+    margin: 0 5% 0 0;
+    width: 95%;
+    height: 50px;
+    background: #eee;
+}
+._Post_link{
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+._Post_link_a{
+    width: 100%;
+    height: 45px;
+    background: #0a8c5f;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    padding-top: 100px;
+}
+._Post_link_a>a{
+    color: white;
+    text-decoration: none;
+    text-align: center!important;
+}
+._Post_link_border_right{
+    border-top: 7px solid #0a8c5f;
+    width: 20%;
+    float:left;
+    margin-top: 20px;
+}
+._Post_link_border_left{
+    border-top: 7px solid #0a8c5f;
+    width: 20%;
+    float:right;
+    margin-top: 20px;
+}
+._Post_link_a:hover ._Post_link_border_right{
+    width: 100%;
+    transition: all ease 1s;
+}
+
+/**/
+
+._Post_icon{
+    width: 80%;
+    height: 420px;
+    background: white;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+._Post_text_icon{
+    width: 65%;
+    height: 60px;
+    float: left;
+    color: white;
+    transition: all ease 1s;
+}
+._Post_text_icon:hover{
+    width: 80%;
+    transition: all ease 1s;
+}
+._Post_text_icon>i{
+    display: inline-block;
+    float: right;
+    margin: 20px 10px;
+}
+._Post_text_icon>p{
+    display: inline-block;
+    float: right;
+    margin: 15px 0;
+}
+#User{
+    background: #b6b6b6;
+}
+#Likes{
+    background: red;
+}
+#Points{
+    background: #ffd400;
+}
+#Views{
+    background: black;
+}
+#Comment{
+    background: #107410;
+}
+#Time {
+    background: #10787f;
+}
+
+#Clock{
+    background: #b64b00;
+    border-bottom-left-radius: 20px;
+}

@@ -31,7 +31,7 @@ class Post extends Model
     public function userscore(){
         return $this->belongsToMany(User::class);
     }
-    public function commments(){
+    public function comments(){
         return $this->hasMany(Comment::class);
     }
 }

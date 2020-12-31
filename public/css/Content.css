@@ -1,0 +1,146 @@
+
+#_content{
+    width: 90%;
+    height: 550px;
+    margin: 25px auto;
+    clear: both;
+    padding-top: 50px ;
+}
+
+#_content ._content-text{
+    margin: 0 auto;
+    width: 600px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 20px;
+    background: darkgreen;
+    color: white;
+    transition: all ease 2s;
+}
+
+#_content ._content-text h3{
+    text-align: center;
+    font: 26px yekan;
+}
+#_content:hover ._content-text{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    transition: all ease 2s;
+}
+
+#_content ._box-col{
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    float: right;
+    overflow: hidden;
+}
+
+#_content ._box-col ._col-3{
+    width: 30%;
+    height: 400px;
+    background: #7ba5ff;
+    float: right;
+    margin-right: 2.5%;
+}
+
+#_content ._box-col ._col-3:hover ._learn-box-inner{
+    top: 0;
+    transition: all ease 1s;
+}
+._learn-box{
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+._col-3 ._learn-box img{
+    width: 100%;
+    height: 400px;
+}
+
+._learn-box ._learn-box-inner{
+    width: 100%;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 340px;
+    transition: all ease 1s;
+
+
+}
+
+._learn-box ._learn-box-inner h2{
+    font: 25px yekans;
+    text-align: center;
+    padding: 10px 0;
+}
+
+._learn-box ._learn-box-inner p{
+    padding: 15px 20px;
+    font: 17px yekan;
+    text-align: center;
+}
+
+._learn-box ._learn-box-inner span{
+    padding: 2.5px 60px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font: 20px yekan;
+}
+
+@media only screen and (max-width: 800px){
+    #_content{
+        height: 250px;
+    }
+    #_content ._content-text{
+        width: 300px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #_content ._content-text h3{
+        font: 15px yekan;
+    }
+
+    #_content:hover ._content-text{
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        transition: all ease 2s;
+    }
+
+    #_content ._box-col ._col-3{
+        height: 200px;
+    }
+
+    ._col-3 ._learn-box img{
+        height: 200px;
+    }
+
+    #_content ._box-col{
+        height: 200px;
+        margin-top:20px ;
+    }
+
+    ._learn-box ._learn-box-inner{
+        top: 170px;
+    }
+
+    ._learn-box ._learn-box-inner h2{
+        font: 13px yekans;
+        padding: 5px 0;
+    }
+
+    ._learn-box ._learn-box-inner p{
+        padding: 7.5px 10px;
+        font: 8px yekan;
+    }
+
+    ._learn-box ._learn-box-inner span{
+        padding: 1px 30px;
+        border: 1px solid black;
+        font: 10px yekan;
+}
+}

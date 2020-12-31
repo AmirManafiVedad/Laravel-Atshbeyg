@@ -1,0 +1,183 @@
+
+/**************** point_star ****************/
+
+._Informating_point_star{
+    height: 250px;
+    margin: 25px 0 0 5%;
+    line-height: 50px;
+    padding: 10px 20px;
+    width: 95%;
+    text-align: justify;
+    border-radius: 10px;
+}
+._Informating_post_point>button{
+    background: none;
+    color: white;
+}
+
+/**************** Informatingpost ****************/
+
+._Informating_post{
+    height: 425px;
+    width: 90%;
+    margin: 20px 5%;
+    background: url("../../Image/Wood/5-1.jpg");
+    background-size: 100% 425px;
+    border-radius: 20px;
+}
+._Informating_post_point{
+    height: 80px;
+    margin-top: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 0 5%;
+}
+._Informating_post_point > i {
+    color: white;
+    margin: 22.5px 2.5px;
+}
+
+/**************** statistics ****************/
+
+._Informating_post_statistics{
+    height: 150px;
+}
+._Informating_post_statistics_time {
+    height: 150px;
+    display: block;
+}
+._Informating_post_statistics_time > i{
+    text-align: center;
+    color: #A3E807;
+    margin: 0 auto;
+    display: block;
+    padding: 25px 0 10px 0;
+}
+._Informating_post_statistics_time > h6{
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+}
+._Informating_post_statistics_time > p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 7.5px 0 0 0;
+    color: #BF0;
+}
+
+._Informating_post_statistics_like{
+    height: 150px;
+
+}
+._Informating_post_statistics_like > i{
+    color: #b20000;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding: 25px 0 10px 0;
+}
+._Informating_post_statistics_like > h6{
+    color: #BF0;
+    text-align: center;
+    margin: 0 auto;
+}
+._Informating_post_statistics_like > p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 7.5px 0 0 0;
+    color: #ffffff;
+}
+
+._Informating_post_statistics_comment{
+    height: 150px;
+}
+._Informating_post_statistics_comment > i{
+    text-align: center;
+    color: #A3E807;
+    margin: 0 auto;
+    display: block;
+    padding: 25px 0 10px 0;
+}
+._Informating_post_statistics_comment > h6{
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+._Informating_post_statistics_comment > p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 7.5px 0 0 0;
+    color: #BF0;
+}
+
+._Informating_post_like{
+    height: 80px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+._Informating_post_like_buttom{
+    background: none;
+    margin-top: 7.5px;
+    width: 100%;
+}
+._Informating_post_likes > i{
+    float: right;
+    display: inline-block;
+    transition: all ease 0.5s;
+    padding: 30px 5% 0 0;
+    color: #ffffff;
+}
+._Informating_post_likes:hover > i{
+    color: #b20000;
+    transition: all ease 0.5s;
+}
+._Informating_post_likes:hover> p{
+    color: #d20000;
+    transition: all ease 0.5s;
+}
+._Informating_post_likes > p {
+    display: inline-block;
+    float: right;
+    padding: 27.5px 20px 0 0;
+    color: #FFFFFF;
+    transition: all ease 0.5s;
+}
+
+/**************** model-like ****************/
+._Model_title{
+    color: #1c7430;
+}
+._Model_text{
+    margin: 5px 7.5px;
+}
+._Btn_like{
+    color: #739f6f;
+}
+._Btn_like:hover{
+    color: #567452;
+}
+._Btn_like_model{
+    background: #1c7430;
+    padding: 10px 30px;
+    border: 1px solid #40ad47;
+}
+._Btn_like_model > a{
+    text-decoration: none;
+    color: white;
+}
+._Btn_like_model:hover{
+    background: #40ad47;
+    border: 1px solid #1c7430;
+    text-decoration: none;
+
+}
+._Btn_like_model_close{
+    background: #567452;
+    padding: 10px 30px;
+    border: 1px solid #739f6f;
+}
+._Btn_like_model_close:hover{
+    background: #739f6f;
+    border: 1px solid #567452;
+
+}

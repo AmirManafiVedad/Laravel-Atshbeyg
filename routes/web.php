@@ -36,7 +36,7 @@ Route::get('post/search','Frontend\Post\PostIndexController@search');
 
 /*          Comments       */
 
-
+Route::post('home/post/comment/{id}','Frontend\Post\PostCommentController@storeComment');
 
 
 /*    Panel Admin User     */
@@ -87,8 +87,8 @@ Route::group(['middleware' => 'admin'] , function (){
     Route::get('admin/comments/commentsall','Admin\AdminCommentController@indexComment');
     Route::delete('admin/comments/commentsall/{id}','Admin\AdminCommentController@destoryComment');
     Route::post('admin/comments/commentsall/{id}','Admin\AdminCommentController@approveComment');
+    Route::get('admin/comments/commentpending/{id}','Admin\AdminCommentController@commentPending');
 //    Route::get('admin/media/mediaposts','Admin\AdminMediaController@indexMediaPost');
-//    Route::get('admin/media/mediacategories','Admin\AdminMediaController@indexMediacategories');
 //    Route::get('admin/media/createmedia','Admin\AdminMediaController@createMedia');
 //    Route::post('admin/media/createmedia','Admin\AdminMediaController@storeMedia');
 //    Route::delete('admin/media/mediaall/{id}','Admin\AdminMediaController@destoryMedia');

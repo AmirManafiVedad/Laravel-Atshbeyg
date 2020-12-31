@@ -59,7 +59,16 @@
 
     <div class="row _Post_header">
 
-        <div class="col-6"></div>
+        <div class="col-6">
+            <div class="_Post_menu">
+                <ul>
+                    <span class="font19">دسته بندی &nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <li class=""><a href="#" class="font16">اشعار</a></li>
+                    <li class=""><a href="#" class="font16">تاریخچه</a></li>
+                    <li class=""><a href="#" class="font16">گالری عکس</a></li>
+                </ul>
+            </div>
+        </div>
 
         <div class="col-3 _Post_header_search">
             <form method="get" action="{{url('post/search')}}">
@@ -152,15 +161,15 @@
                 </div>
 
                 <div class="row _Margin_padding">
-                    <div class="col-3 _Margin_padding">
+                    <div class="col-2 _Margin_padding">
                         <div class="_Post_home_link_border"></div>
                     </div>
-                    <div class="col-6 _Margin_padding">
+                    <div class="col-8 _Margin_padding">
                         <div class="_Post_home_link">
-                            <a href="{{url('home/post/'.$post->slug)}}" class="font17">ادامه مطلب</a>
+                            <a href="{{url('home/post/'.$post->slug)}}" class="font17">بیشتر بخوانید ...</a>
                         </div>
                     </div>
-                    <div class="col-3 _Margin_padding">
+                    <div class="col-2 _Margin_padding">
                         <div class="_Post_home_link_border"></div>
                     </div>
                 </div>

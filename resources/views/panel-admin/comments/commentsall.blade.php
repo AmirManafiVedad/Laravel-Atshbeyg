@@ -100,7 +100,7 @@
                         <td class="_Table_admin_8_8 _Table_requestcomment_operation font18">
 
                             <div class="_Table_admin_operation_view">
-                                <a href="" title="مشاهده"><i class="fas fa-eye font22"></i></a>
+                                <a href="{{url('admin/comments/commentpending',$comment->id)}}" title="مشاهده"><i class="fas fa-eye font22"></i></a>
                             </div>
 
                             <button type="button" class="_Table_admin_operation_approve" data-toggle="modal" data-target="#exampleModalLong">
@@ -124,16 +124,26 @@
                                         </div>
                                         <div class="modal-body _Model_text font17">
                                             <br>
-                                            آیا مطمئین هستید که کامنت <span class="_Model_text_name font19"><b>{{$comment->description}}</b></span>  منتشر شود ؟
+                                            آیا مطمئین هستید که کامنت
                                             <br>
+                                            <p class="_Model_text_name font19"><b>{{$comment->description}}</b></p>
+                                           @if($comment->status == 0)
+                                            فعال کنید ؟
+                                            @else
+                                            غیر فعال کنید ؟
+                                            @endif
                                             <br>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary _Btn_delete_model_close font16" data-dismiss="modal">بستن</button>
-                                            <form method="post" action="{{url('admin/comments/commentsall',$comment->id)}}">
+                                            <form method="post" action="{{url('admin/comments/commentsall/'.$comment->id)}}">
                                                 {{csrf_field()}}
                                                 <button type="submit" class="btn btn-primary _Btn_delete_model font16">
-                                                    اضافه کردن
+                                                    @if($comment->status == 0)
+                                                        فعال کردن
+                                                    @else
+                                                        غیر فعال کردن
+                                                    @endif
                                                 </button>
                                             </form>
                                         </div>
@@ -158,14 +168,14 @@
                                         <div class="modal-body _Model_text font17">
                                             <br>
                                             آیا مطمئین هستید که کامنت
+                                            <br>
                                             <p class="_Model_text_name font19"><b>{{$comment->description}}</b></p>
                                             حذف کنید ؟
-                                            <br>
                                             <br>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary _Btn_delete_model_close font16" data-dismiss="modal">بستن</button>
-                                            <form method="post" action="{{url('admin/comments/commentsall',$comment->id)}}">
+                                            <form method="post" action="{{url('admin/comments/commentsall/'.$comment->id)}}">
                                                 {{csrf_field()}}
                                                 {{method_field('delete')}}
                                                 <button type="submit" class="btn btn-primary _Btn_delete_model font16">

@@ -1,0 +1,292 @@
+body{
+    background: #021011;
+
+}
+._Comment_post{
+    width: 100%;
+    height: 350px;
+    border: 2px solid #7dc660;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding:15px 30px;
+}
+._Comment_post>form>textarea{
+    height: 300px;
+}
+._Comment_submit{
+    width: 20%;
+    height: 45px;
+    background: #1c7430;
+    border-radius: 20px;
+    color: #FFFFFF;
+}
+._Comment_reset{
+    width: 20%;
+    height: 45px;
+    background: #1c7430;
+    border-radius: 20px;
+    color: #FFFFFF;
+}
+/************** Postcomment **************/
+
+._Post_comment{
+    background: white;
+    height: auto;
+    margin: 25px 0 25px 5%;
+    line-height: 50px;
+    padding: 10px 20px;
+    width: 95%;
+    text-align: justify;
+    border-radius: 10px;
+}
+._Post_comment > nav {
+    width: 49.8%;
+    height: 50px;
+    line-height: 45px;
+    background: #d5ffbf;
+    display: inline-block;
+    text-align: center;
+}
+._Post_comment_box{
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    border-bottom: 2px solid #cce1b4;
+}
+._Post_comment_information_top{
+    display: inline-block;
+    padding: 10px 10px;
+}
+._Post_comment_information_top > i {
+    display: inline-block;
+    padding: 5px 10px;
+
+}
+._Post_comment_information_top > p {
+    display: inline-block;
+}
+._Post_comment_box > p{
+    padding: 5px 20px;
+    text-align: justify;
+}
+
+._Post_comment_information{
+    width: 90%;
+    height: 50px;
+}
+._Post_comment_information_bottom > i{
+    display: inline-block;
+    margin-right: 20px;
+    height: 25px;
+}
+._Post_comment_information_bottom > p{
+    display: inline-block;
+    margin-right: 10px;
+}
+._Post_comment_information_bottom > a{
+    float: left;
+    margin-left: 50px;
+    color: black;
+    left: 20px;
+    position: absolute;
+    bottom: 20px;
+
+}
+
+
+
+/************** Informatingadmin **************/
+
+._Informating_admin{
+    height: 520px;
+    width: 90%;
+    margin: 20px 5%;
+    background: white;
+    border-radius: 20px;
+}
+._Informating_admin_left > img {
+    height: 200px;
+    border-radius: 100%;
+    width: 65%;
+    margin: 0 auto;
+    padding: 15px 0;
+    display:block;
+}
+._Informating_admin_left > h6{
+    height: 20px;
+    text-align: center;
+    padding: -15px 0;
+    display:block;
+}
+._Informating_admin_left > p{
+    height: 20px;
+    text-align: justify;
+    padding: 10px 15px;
+    display:block;
+}
+._Informating_admin_left_follow_chat{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+._Informating_admin_left_follow {
+    padding: 4px 25%;
+    border-radius: 20px;
+    margin: 20px 10%;
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+}
+._Informating_admin_left_chat{
+    padding: 4px 25%;
+    border-radius: 20px;
+    margin: 20px 10%;
+    display: block;
+    text-align: center;
+    border:1px solid #828282 ;
+}
+
+
+._Informating_admin_right{
+    height: 520px;
+}
+
+._Informating_admin_right_acceptpost{
+     width: 100%;
+     height: 130px;
+    transition: all ease 1.5s;
+}
+._Informating_admin_right_acceptpost:hover{
+    transition: all ease 1.5s;
+    background: #cce1b4;
+}
+._Informating_admin_right_acceptpost > i{
+    text-align: center;
+    color: #828282;
+    display: block;
+    padding: 15px 0 10px 0;
+    transition: all ease 0.5s;
+}
+._Informating_admin_right_acceptpost > i:hover{
+    transition: all ease 0.5s;
+    color: #227b00;
+}
+._Informating_admin_right_acceptpost > h6 {
+    color: #828282;
+    text-align: center;
+    margin: 0 auto;
+}
+._Informating_admin_right_acceptpost > p {
+    text-align: center;
+    margin: 0 auto;
+}
+
+._Informating_admin_right_post{
+    width: 100%;
+    height: 130px;
+    transition: all ease 1.5s;
+}
+._Informating_admin_right_post:hover{
+    transition: all ease 1.5s;
+    background: #cce1b4;
+}
+._Informating_admin_right_post > i{
+    text-align: center;
+    color: #828282;
+    display: block;
+    padding: 15px 0 10px 0;
+    transition: all ease 0.5s;
+}
+._Informating_admin_right_post > i:hover{
+    transition: all ease 0.5s;
+    color: #227b00;
+}
+._Informating_admin_right_post > h6 {
+    color: #828282;
+    text-align: center;
+    margin: 0 auto;
+}
+._Informating_admin_right_post > p {
+    text-align: center;
+    margin: 0 auto;
+}
+
+._Informating_admin_right_heart{
+    width: 100%;
+    height: 130px;
+}
+._Informating_admin_right_heart:hover{
+    transition: all ease 1.5s;
+    background: #cce1b4;
+}
+._Informating_admin_right_heart > i{
+    text-align: center;
+    color: #b20000;
+    display: block;
+    padding: 15px 0 10px 0;
+    transition: all ease 0.5s;
+}
+._Informating_admin_right_heart > i:hover{
+    transition: all ease 0.5s;
+}
+._Informating_admin_right_heart > h6 {
+    color: #828282;
+    text-align: center;
+    margin: 0 auto;
+}
+._Informating_admin_right_heart > p {
+    text-align: center;
+    margin: 0 auto;
+}
+
+._Informating_admin_right_follow{
+    width: 100%;
+    height: 130px;
+    transition: all ease 1.5s;
+}
+._Informating_admin_right_follow:hover{
+    transition: all ease 1.5s;
+    background: #cce1b4;
+}
+._Informating_admin_right_follow > i{
+    text-align: center;
+    color: #828282;
+    display: block;
+    padding: 15px 0 10px 0;
+    transition: all ease 0.5s;
+}
+._Informating_admin_right_follow > i:hover{
+    transition: all ease 0.5s;
+    color: #227b00;
+}
+._Informating_admin_right_follow > h6 {
+    color: #828282;
+    text-align: center;
+    margin: 0 auto;
+}
+._Informating_admin_right_follow > p {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/************** Sharepost **************/
+
+._Share_post{
+    height: 120px;
+    width: 90%;
+    margin: 20px 5%;
+    background: white;
+    border-radius: 20px;
+}
+._Share_post > p {
+    padding: 20px 25px 5px 25px;
+}
+._Share_post_i > i{
+    float: left;
+    margin-left: 25px;
+    transition: all ease 0.5s;
+}
+._Share_post_i > i:hover{
+    transition: all ease 0.5s;
+    color: #227b00;
+}

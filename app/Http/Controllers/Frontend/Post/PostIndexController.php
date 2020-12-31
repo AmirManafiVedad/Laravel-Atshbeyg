@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Frontend\Post;
 
+use App\Comment;
+use App\Events\PostViewEvent;
 use App\Post;
 use App\User;
 use Illuminate\Http\Request;
@@ -11,18 +13,24 @@ use Illuminate\Support\Facades\DB;
 
 class PostIndexController extends Controller
 {
+    public function viewIncreaser() {
+        $post = Post::find(15);
+        $post->views +=1;
+        $post->save();
+    }
+
     public function indexPost($slug){
         $uid=Auth::id();
-        $post = Post::with('categories','user','photo')->where('slug', $slug)->first();
-        $id = $post->id;
-
+        $post = Post::where('slug',$slug)->first();
+        event(new PostViewEvent($post));
+        $post_id = $post->id;
+        $comments = Comment::where('post_id',$post_id)->where('status',1)->get();
         $isLiked = DB::table('post_user')->where('user_id', $uid)
-            ->where('post_id',$id)->count();
+            ->where('post_id',$post_id)->count();
 
         $isScore=DB::table('post_reletive')->where('user_id',$uid)
-            ->where('post_id',$id)->count();
-
-        return view('frontend.post.post-index.post' , compact('post' , 'isLiked', 'isScore'));
+            ->where('post_id',$post_id)->count();
+        return view('frontend.post.post-index.post' , compact('comments' ,'post', 'isLiked', 'isScore'));
     }
 
     public function storeLikes($id){

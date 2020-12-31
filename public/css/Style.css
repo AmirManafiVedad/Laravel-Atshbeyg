@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    direction: rtl;
+    /*background: #b4eeb6;*/
+}
+
+
+._Margin_padding{
+    margin: 0 0 !important;
+    padding: 0 0 !important;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+}

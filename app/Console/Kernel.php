@@ -2,6 +2,8 @@
 
 namespace App\Console;
 
+use App\Events\PostViewEvent;
+use App\Post;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -26,6 +28,9 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
+        $schedule->call(function () {
+            event(new PostViewEvent(Post::find(15)));
+        })->everyMinutes();
     }
 
     /**

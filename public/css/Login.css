@@ -1,0 +1,334 @@
+html,body{
+    height: 100%;
+    margin: 0;
+}
+body{
+    background: #eeeeee;
+    direction: rtl;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.Login-background{
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    filter: blur(5px);
+    max-width: 100%;
+    position: fixed;
+}
+
+
+/*************** Login-width-height ***************/
+
+.Login{
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    margin: 5% 15% 5% 15%;
+    top: 0;
+    animation: Loginani 1s ease;
+}
+@keyframes Loginani {
+    0%{
+        opacity: 0;transform: scale(1.1);
+    }
+    100%{
+        opacity: 1;transform: scale(1);
+    }
+}
+
+/*************** Login-img-li ***************/
+
+.Login-img{
+    width:60%;
+    height: 100%;
+    float: left;
+}
+.Login-img-img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+}
+.Login-name{
+    position: absolute;
+    top: 0;
+    right: 37%;
+}
+.Login-li{
+    width: 110px;
+    height: 30px;
+    background: rgba(6, 83, 56, 0.75);
+    padding: 7.5px 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: 15px 0;
+    transition: all ease 0.5s;
+}
+.Login-li:hover{
+    width: 130px;
+    transition: all ease 0.5s;
+}
+.Img-login-text{
+    flex-grow: 1;
+    position: absolute;
+    top: 45%;
+    right: 42%;
+    max-width: 56%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.Img-login-text-p1{
+    color: white;
+    animation:Imglogintext 1.5s ease forwards ;
+    animation-delay: .5s ;
+    color: white;
+    padding: 0 25px;
+    opacity: 0;
+}
+.Img-login-text-p2{
+    color: white;
+    animation:Imglogintext 1.5s ease forwards ;
+    animation-delay: 1s ;
+    opacity: 0;
+}
+#Img-login-text-p2{
+    animation:Imglogintext 1.5s ease forwards ;
+    animation-delay: 1.75s ;
+    opacity: 0;
+}
+.Img-login-text-a{
+    color: white;
+    padding: 5px 15px;
+    background: rgba(24,100,17,0.75);
+    border-radius: 10px;
+    opacity: 0;
+    animation:Imglogintext 1s ease forwards ;
+    animation-delay: 2.25s ;
+}
+@keyframes Imglogintext {
+    0%{
+        opacity: 0;transform: translateX(50px) ;
+    }
+    100%{
+        opacity: 1;transform: translateX(0) ;
+    }
+}
+/*************** Login-form ***************/
+.Login-form{
+    width: 40%;
+    height: 100%;
+    float: right;
+    background: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.Login-form input{
+    width: 87.5%;
+    height: 30px;
+    border: none;
+    margin-right: 2.5%;
+}
+.Login-form .input{
+    width: 75%;
+    height: 40px;
+    margin: 10px 0;
+    color: black;
+    padding: 0 2.5%;
+    transition: all ease 0.5s;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    margin-right: 9%;
+    opacity: 0;
+}
+.Login-form .input:hover{
+    border-bottom: 2px solid #a1a1a1;
+    transition: all ease 0.5s;
+}
+.Login-form button{
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    margin: 50px 10%;
+    border-radius: 10px;
+    background: #065338;
+    color: white;
+    border: none;
+    transition: all ease 0.5s;
+    opacity: 0;
+    box-shadow: 5px 5px 20px rgba(6, 83, 56, 0.75);
+}
+.Login-form button:hover {
+    color: white;
+    background: #0a8c5f;
+    transition: all ease 0.5s;
+    box-shadow: 7.5px 7.5px 20px #0a8c5f;
+}
+.forgot-password{
+    color: #065338;
+    padding: 0 12.5%;
+    margin: 10px auto;
+    transition: all ease 0.5s;
+    opacity: 0;
+}
+.forgot-password:hover{
+    color: #0a8c5f;
+    transition: all ease 0.5s;
+}
+.Button-Login-right{
+    margin-right: 10%;
+}
+.Login-form-img{
+    width: 30%;
+    height: 30%;
+    text-align: center;
+    padding: 5% 35% 2.5% 35%;
+    border-radius: 100%;
+    opacity: 0;
+}
+.Fontawesome-Login-i{
+    display: inline-block;
+    color: rgba(24,100,17,0.75);
+}
+.Fontawesome-Login{
+    display: inline-block;
+    border-bottom: 2px solid #eeeeee;
+    margin-right: 10%;
+}
+label{
+    position: absolute;
+    top: 74.5%;
+    right: 6.5%;
+}
+h6{
+    font-family: Bold;
+    text-align: center;
+    margin: -35px auto 0 auto;
+    border-bottom: 4px solid #065338;
+    width: 80%;
+    height: 60px;
+    opacity: 0;
+}
+h5{
+    text-align: center;
+    font-family: Bold;
+    opacity: 0;
+}
+.Form-p{
+    opacity: 0;
+    padding: 0 10%;
+    margin: 5px 0;
+    color: rgba(24,100,17,0.75);
+}
+.P-color-Login{
+    color: rgba(175, 0, 0, 0.75);
+}
+#Singin {
+    display: none;
+}
+/********************* Loginanimation *********************/
+.Login #Login #Login-image{
+    animation: inputformY 1s ease forwards;
+    animation-delay: 0.5s;
+}
+.Login #Login #p-text-Login{
+    animation: inputform 1s ease forwards;
+    animation-delay: 1s;
+}
+.Login #Login #Login-p{
+    animation: inputform 1s ease forwards;
+    animation-delay: 1.25s;
+}
+.Login #Login #Login-user{
+    animation: inputform 1s ease forwards;
+    animation-delay: 1.5s;
+}
+.Login #Login #Login-email{
+    animation: inputform 1s ease forwards;
+    animation-delay: 1.75s;
+}
+.Login #Login #Login-password{
+    animation: inputform 1s ease forwards;
+    animation-delay: 2s;
+}
+.Login #Login #Login-againpassword{
+    animation: inputform 1s ease forwards;
+    animation-delay: 2.25s;
+}
+.Login #Login #Login-buttom-save{
+    animation: inputformbutton 1s ease forwards;
+    animation-delay: 2.5s;
+}
+/********************* Singinanimation *********************/
+.Login #Singin #Singin-image{
+    animation: inputformY 1s ease forwards;
+    animation-delay: 0.5s;
+}
+.Login #Singin #p-text-Singin{
+    animation: inputform 1s ease forwards;
+    animation-delay: 0.75s;
+}
+.Login #Singin #Singin-p{
+    animation: inputform 1s ease forwards;
+    animation-delay: 1s;
+}
+.Login #Singin #Singin-user{
+    animation: inputform 1s ease forwards;
+    animation-delay: 1.25s;
+}
+.Login #Singin #Singin-password{
+    animation: inputform 1s ease forwards;
+    animation-delay: 1.5s;
+}
+.Login #Singin #Singin-forgot-password{
+    animation: inputform 1s ease forwards;
+    animation-delay: 1.75s;
+}
+.Login #Singin #Singin-buttom-save{
+    animation: inputformbutton 1s ease forwards;
+    animation-delay: 2s;
+}
+/********************* keyframes *********************/
+
+@keyframes inputform{
+    0%{
+        opacity:0;transform: translateX(+50px);
+    }
+    100%{
+        opacity:1;transform: translateX(0);
+    }
+}
+@keyframes inputformh6{
+    0%{
+        opacity:0;transform: translateY(-25px);
+    }
+    100%{
+        opacity:1;transform: translateY(0);
+    }
+}
+@keyframes inputformY{
+    0%{
+        opacity:0;transform: rotateY(540deg);
+    }
+    100%{
+        opacity:1;transform: translateY(0);
+    }
+}
+@keyframes inputformbutton{
+    0%{
+        opacity:0;transform: translateY(+50px);
+    }
+    100%{
+        opacity:1;transform: translateY(0);
+    }
+}
+

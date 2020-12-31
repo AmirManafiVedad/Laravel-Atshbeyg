@@ -9,6 +9,35 @@
         <li ><a href="#">داشبورد</a></li>
 
         <li class="_Has-sub">
+            <i class="far fa-home font22 _Menu_left"></i>
+            <a href="#">مدیریت صفحه اصلی</a>
+            <ul>
+
+                <li>
+                    <i class="far fa-plus-circle font20 _Menu_left _Menu_left_i"></i>
+                    <a href="" class="font17">تبلیغات</a>
+                </li>
+                <li>
+                    <i class="far fa-projector font20 _Menu_left _Menu_left_i"></i>
+                    <a href="" class="font17">خبر فوری</a>
+                </li>
+                <li>
+                    <i class="far fa-plus-circle font20 _Menu_left _Menu_left_i"></i>
+                    <a href="" class="font17">پیشنهادات</a>
+                </li>
+                <li>
+                    <i class="far fa-plus-circle font20 _Menu_left _Menu_left_i"></i>
+                    <a href="" class="font17">اسلاید شو</a>
+                </li>
+                <li>
+                    <i class="far fa-plus-circle font20 _Menu_left _Menu_left_i"></i>
+                    <a href="" class="font17">فوتر</a>
+                </li>
+
+            </ul>
+        </li>
+
+        <li class="_Has-sub">
             <i class="far fa-puzzle-piece font22 _Menu_left"></i>
             <a href="#">مدیریت دسته ها</a>
             <ul>
