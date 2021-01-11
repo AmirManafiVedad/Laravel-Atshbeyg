@@ -186,10 +186,10 @@
     width: 85%;
     margin: 35px 7.5% 35px 7.5%;
     background: #090c0d;
+    box-shadow:0 6px 20px 2px rgba(22, 27, 28, 0.93);
     clear: both;
     border-radius: 10px;
     transition: all ease 1s;
-    box-shadow:0 6px 20px 2px rgba(22, 27, 28, 0.93);
 }
 ._Post_home:hover{
     box-shadow:0 5px 12px 0 rgb(76, 164, 75);
@@ -258,6 +258,12 @@
 }
 ._Post_home_img_heart>p{
     color: #ff0000;
+}
+._Post_home_img_view>i{
+    color: #e5e5e5;
+}
+._Post_home_img_view>p{
+    color: #e5e5e5;
 }
 /**/
 

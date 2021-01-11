@@ -22,7 +22,6 @@ class AdminCommentController extends Controller
         return view ('panel-admin.comments.comment-pendin',compact('comment'));
     }
     public function approveComment($id){
-        dd($id);
         if (Comment::find($id)->status == 0){
             $comment=Comment::find($id);
             $comment->status= 1;

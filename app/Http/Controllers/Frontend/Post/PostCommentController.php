@@ -22,5 +22,21 @@ class PostCommentController extends Controller
             Session::flash('addComment','نظر شما با موفقیت ثبت شد و در انتظار تایید مدیران گرفت .');
             return redirect('home/post/'.$post->slug);
         }
+    public function replay(Request $request){
+            $post = $request->input('post_id');
+        $parent = $request->input('parent_id');
+        $comment=new Comment();
+        $comment->description=$request->input('description');
+
+        $comment->status= 0;
+        $comment->user_id=Auth::id();
+        $comment->post_id=$post;
+        $comment->parent_id=$parent;
+        $comment->save();
+        $post=Post::find($post);
+        Session::flash('addComment','نظر شما با موفقیت ثبت شد و در انتظار تایید مدیران گرفت .');
+        return redirect('home/post/'.$post->slug);
+    }
+
 
 }

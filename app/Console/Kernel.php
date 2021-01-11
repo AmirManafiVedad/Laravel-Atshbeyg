@@ -28,9 +28,6 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
-        $schedule->call(function () {
-            event(new PostViewEvent(Post::find(15)));
-        })->everyMinutes();
     }
 
     /**

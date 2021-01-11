@@ -57,6 +57,7 @@
 </body>
 @yield('scripts')
 <script src="{{url('js/jquery.js')}}"></script>
+<script src="{{url('js/menu-jquery.js')}}"></script>
 <script src="{{url('js/bootstrap.min.js')}}"></script>
 <script src="https://cdn.ckeditor.com/4.15.1/standard-all/ckeditor.js"></script>
 <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>

@@ -62,4 +62,7 @@ class User extends Authenticatable
     public function commments(){
         return $this->hasMany(Comment::class);
     }
+    public function pointposts(){
+        return $this->belongsToMany(Post::class);
+    }
 }

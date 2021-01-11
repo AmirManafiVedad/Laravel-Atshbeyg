@@ -1,25 +1,28 @@
 ._Post{
     width: 100%;
     height: auto;
-    background: #FFFFFF;
+    background: #090c0d;
+    box-shadow:0 6px 20px 2px rgba(22, 27, 28, 0.93);
     border-radius: 20px;
-    border: 3px solid#0a8c5f;
+    border: 3px solid #3b763b;
 }
 ._Post_title{
     width: 100%;
     height: 100px;
     padding: 10px 50px;
+    color: white;
 }
 ._Post_categories{
     width: 90%;
     margin: 0 5%;
     height: 50px;
-    color: #80a47b;
+    color: #417d00;
     padding: 10px 20px;
-    border-top: 1px solid #0a8c5f;
+    border-top: 1px solid #3b763b;
 }
 ._Post_categories>span{
     padding: 0 10px;
+    color: #3b763b;
 }
 ._Post_image img{
     width: 95%;
@@ -30,4 +33,8 @@
 ._Post_text{
     text-align: justify;
     padding: 20px 30px;
+    color: white;
+}
+._Post_text a{
+    color: #4e9b4e;
 }

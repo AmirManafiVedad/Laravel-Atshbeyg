@@ -46,9 +46,9 @@
                     <div class="_Post_statistics">
                         <i class="fad fa-eye"></i>
                         <br>
-                        <p class="font22"><b>تعداد بازدید :</b></p>
+                        <p class="font24"><b>تعداد بازدید :</b></p>
                         <br>
-                        <p class="font28"><b>1235</b></p>
+                        <p class="font30"><b>1235</b></p>
                     </div>
                 </div>
             </div>
@@ -116,17 +116,21 @@
                 <div class="_Post_home_img">
                     <img src="{{url('Image/PostImage',$post->photo->path)}}">
                     <div class="row _Margin_padding _Post_home_img_col">
-                        <div class="col-4 _Margin_padding _Post_home_img_icon _Post_home_img_comment">
+                        <div class="col-3 _Margin_padding _Post_home_img_icon _Post_home_img_comment">
                             <i class="fas fa-comments"></i>
                             <p class="font18">6516</p>
                         </div>
-                        <div class="col-4 _Margin_padding _Post_home_img_icon _Post_home_img_heart">
+                        <div class="col-3 _Margin_padding _Post_home_img_icon _Post_home_img_heart">
                             <i class="fas fa-heart"></i>
                             <p class="font18">{{$post->like}}</p>
                         </div>
-                        <div class="col-4 _Margin_padding _Post_home_img_icon _Post_home_img_star">
+                        <div class="col-3 _Margin_padding _Post_home_img_icon _Post_home_img_star">
                             <i class="fas fa-star"></i>
                             <p class="font18">6151</p>
+                        </div>
+                        <div class="col-3 _Margin_padding _Post_home_img_icon _Post_home_img_view">
+                            <i class="fas fa-eye"></i>
+                            <p class="font18">{{$post->views}}</p>
                         </div>
                     </div>
                 </div>

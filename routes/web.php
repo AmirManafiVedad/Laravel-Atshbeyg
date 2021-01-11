@@ -35,8 +35,9 @@ Route::post('home/post/{id}/score', 'Frontend\Post\PostIndexController@storeScor
 Route::get('post/search','Frontend\Post\PostIndexController@search');
 
 /*          Comments       */
-
+Route::post('home/post/comment/reply','Frontend\Post\PostCommentController@replay');
 Route::post('home/post/comment/{id}','Frontend\Post\PostCommentController@storeComment');
+
 
 
 /*    Panel Admin User     */

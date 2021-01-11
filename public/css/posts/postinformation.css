@@ -1,40 +1,60 @@
-
-/**************** point_star ****************/
-
-._Informating_point_star{
-    height: 250px;
-    margin: 25px 0 0 5%;
-    line-height: 50px;
-    padding: 10px 20px;
-    width: 95%;
-    text-align: justify;
-    border-radius: 10px;
-}
-._Informating_post_point>button{
-    background: none;
-    color: white;
-}
-
 /**************** Informatingpost ****************/
 
 ._Informating_post{
-    height: 425px;
+    height: 450px;
     width: 90%;
     margin: 20px 5%;
-    background: url("../../Image/Wood/5-1.jpg");
     background-size: 100% 425px;
-    border-radius: 20px;
+    border-radius: 5px;
+    background: #090c0d;
+    box-shadow:0 6px 20px 2px rgba(22, 27, 28, 0.93);
+    transition: all ease 0.5s;
+    border-bottom: 3px solid #3b763b;
 }
+._Informating_post:hover{
+    transition: all ease 0.5s;
+}
+._Informating_post_text_border{
+    border-top: 2px solid #3b763b;
+    margin-top: 40px !important;
+}
+._Informating_post_text{
+    margin: 20px auto 0 auto;
+    text-align: center;
+    color: #3b763b;
+}
+
+
 ._Informating_post_point{
-    height: 80px;
+    height: 50px;
+    width: 100%;
     margin-top: 10px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
     padding: 0 5%;
+    display: inline-block;
+    text-align: center;
 }
-._Informating_post_point > i {
+._Informating_post_point > form{
+    display: inline-block;
+}
+._Informating_post_point > form > button{
+    background: none;
+    margin-right:-5px ;
+    padding: 0 5px;
+}
+._Informating_post_point > form > button > i {
     color: white;
-    margin: 22.5px 2.5px;
+    margin-top: 10px;
+}
+._Informating_post_point_text{
+    height: 50px;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    padding-top: 5px;
+    color: #4e9b4e;
+}
+._Informating_post_point_text>span{
+    color: white;
 }
 
 /**************** statistics ****************/
@@ -48,7 +68,8 @@
 }
 ._Informating_post_statistics_time > i{
     text-align: center;
-    color: #A3E807;
+    color: #3b763b;
+    border-radius: 50%;
     margin: 0 auto;
     display: block;
     padding: 25px 0 10px 0;
@@ -62,7 +83,7 @@
     text-align: center;
     margin: 0 auto;
     padding: 7.5px 0 0 0;
-    color: #BF0;
+    color: #417d00;
 }
 
 ._Informating_post_statistics_like{
@@ -77,7 +98,7 @@
     padding: 25px 0 10px 0;
 }
 ._Informating_post_statistics_like > h6{
-    color: #BF0;
+    color: white;
     text-align: center;
     margin: 0 auto;
 }
@@ -85,7 +106,7 @@
     text-align: center;
     margin: 0 auto;
     padding: 7.5px 0 0 0;
-    color: #ffffff;
+    color: #b20000;
 }
 
 ._Informating_post_statistics_comment{
@@ -93,7 +114,7 @@
 }
 ._Informating_post_statistics_comment > i{
     text-align: center;
-    color: #A3E807;
+    color: #3b763b;
     margin: 0 auto;
     display: block;
     padding: 25px 0 10px 0;
@@ -107,7 +128,7 @@
     text-align: center;
     margin: 0 auto;
     padding: 7.5px 0 0 0;
-    color: #BF0;
+    color: #417d00;
 }
 
 ._Informating_post_like{
@@ -128,11 +149,11 @@
     color: #ffffff;
 }
 ._Informating_post_likes:hover > i{
-    color: #b20000;
+    color: #ff0000;
     transition: all ease 0.5s;
 }
 ._Informating_post_likes:hover> p{
-    color: #d20000;
+    color: #ff0000;
     transition: all ease 0.5s;
 }
 ._Informating_post_likes > p {

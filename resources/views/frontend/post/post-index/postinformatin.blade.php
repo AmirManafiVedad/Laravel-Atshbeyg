@@ -1,24 +1,178 @@
-
+@php
+    $avg=intval($avgScore);
+@endphp
     <div class="row">
         <div class="col-12">
             <div class="_Informating_post">
+                <div class="row _Margin_padding">
+                    <div class="col-3 _Margin_padding _Informating_post_text_border"></div>
+                    <div class="col-6 _Margin_padding"><h6 class="_Informating_post_text font22">اطلاعات مطلب</h6></div>
+                    <div class="col-3 _Margin_padding _Informating_post_text_border"></div>
+                </div>
+
+                {{--      Auth User For Add Point          --}}
+
                 <div class="row _Margin_padding" >
                     <div class="col-12 _Margin_padding" onmouseenter="Informatingpostpointstar0()">
-                            <form method="post" action="{{url('home/post/'.$post->id.'/score')}}">
-                                @csrf
+                        @auth()
+                            @if($isScore)
+                                @if($avg==1)
+                                    <style>
+                                        #_Informating_post_star1{
+                                            color: #ffe502!important;
+                                        }
+                                    </style>
+                                @elseif($avg==2)
+                                    <style>
+                                        #_Informating_post_star1, #_Informating_post_star2{
+                                            color: #ffe502!important;
+                                        }
+                                    </style>
+                                @elseif($avg==3)
+                                    <style>
+                                        #_Informating_post_star1, #_Informating_post_star2, #_Informating_post_star3{
+                                            color: #ffe502!important;
+                                        }
+                                    </style>
+                                @elseif($avg==4)
+                                    <style>
+                                        #_Informating_post_star1, #_Informating_post_star2, #_Informating_post_star3, #_Informating_post_star4{
+                                            color: #ffe502!important;
+                                        }
+                                    </style>
+                                @elseif($avg==5)
+                                    <style>
+                                        #_Informating_post_star1, #_Informating_post_star2, #_Informating_post_star3, #_Informating_post_star4, #_Informating_post_star5{
+                                            color: #ffe502!important;
+                                        }
+                                    </style>
+                                @endif
                                 <div class="_Informating_post_point">
-                                    <i class="fas fa-star font28" id="_Informating_post_star1" onmouseenter="Informatingpostpointstar1()"></i></input>
-                                    <i class="fas fa-star font28" id="_Informating_post_star2" onmouseenter="Informatingpostpointstar2()"></i></button>
-                                    <i class="fas fa-star font28" id="_Informating_post_star3" onmouseenter="Informatingpostpointstar3()"></i></button>
-                                    <i class="fas fa-star font28" id="_Informating_post_star4" onmouseenter="Informatingpostpointstar4()"></i></button>
-                                    <i class="fas fa-star font28" id="_Informating_post_star5" onmouseenter="Informatingpostpointstar5()"></i></button>
+                                    <form method="post" action="{{url('home/post/'.$post->id.'/score')}}" onmouseover="Informatingpostpointstar1()" onmouseout="Informatingpostpointstar0()">
+                                        @csrf
+                                        <input type="hidden" value="1" name="point_score">
+                                        <button type="submit">
+                                            <i class="fas fa-star font28" id="_Informating_post_star1" onmouseover="Informatingpostpointstar1()"></i>
+                                        </button>
+                                    </form>
+                                    <form method="post" action="{{url('home/post/'.$post->id.'/score')}}" onmouseover="Informatingpostpointstar2()" onmouseout="Informatingpostpointstar0()">
+                                        @csrf
+                                        <input type="hidden" value="2" name="point_score">
+                                        <button type="submit">
+                                            <i class="fas fa-star font28" id="_Informating_post_star2"></i>
+                                        </button>
+                                    </form>
+                                    <form method="post" action="{{url('home/post/'.$post->id.'/score')}}" onmouseover="Informatingpostpointstar3()"  onmouseout="Informatingpostpointstar0()">
+                                        @csrf
+                                        <input type="hidden" value="3" name="point_score">
+                                        <button type="submit">
+                                            <i class="fas fa-star font28" id="_Informating_post_star3"></i>
+                                        </button>
+                                    </form>
+                                    <form method="post" action="{{url('home/post/'.$post->id.'/score')}}"  onmouseover="Informatingpostpointstar4()" onmouseout="Informatingpostpointstar0()">
+                                        @csrf
+                                        <input type="hidden" value="4" name="point_score">
+                                        <button type="submit">
+                                            <i class="fas fa-star font28" id="_Informating_post_star4"></i>
+                                        </button>
+                                    </form>
+                                    <form method="post" action="{{url('home/post/'.$post->id.'/score')}}" onmouseover="Informatingpostpointstar5()" onmouseout="Informatingpostpointstar0()">
+                                        @csrf
+                                        <input type="hidden" value="5" name="point_score">
+                                        <button type="submit">
+                                            <i class="fas fa-star font28" id="_Informating_post_star5"></i>
+                                        </button>
+                                    </form>
                                 </div>
-                            </form>
+                            @else
+                                <div class="_Informating_post_point">
+                                    <form method="post" action="{{url('home/post/'.$post->id.'/score')}}" onmouseover="Informatingpostpointstar1()" onmouseout="Informatingpostpointstar0()">
+                                        @csrf
+                                        <input type="hidden" value="1" name="point_score">
+                                        <button type="submit">
+                                            <i class="fas fa-star font28" id="_Informating_post_star1" onmouseover="Informatingpostpointstar1()"></i>
+                                        </button>
+                                    </form>
+                                    <form method="post" action="{{url('home/post/'.$post->id.'/score')}}" onmouseover="Informatingpostpointstar2()" onmouseout="Informatingpostpointstar0()">
+                                        @csrf
+                                        <input type="hidden" value="2" name="point_score">
+                                        <button type="submit">
+                                            <i class="fas fa-star font28" id="_Informating_post_star2"></i>
+                                        </button>
+                                    </form>
+                                    <form method="post" action="{{url('home/post/'.$post->id.'/score')}}" onmouseover="Informatingpostpointstar3()"  onmouseout="Informatingpostpointstar0()">
+                                        @csrf
+                                        <input type="hidden" value="3" name="point_score">
+                                        <button type="submit">
+                                            <i class="fas fa-star font28" id="_Informating_post_star3"></i>
+                                        </button>
+                                    </form>
+                                    <form method="post" action="{{url('home/post/'.$post->id.'/score')}}"  onmouseover="Informatingpostpointstar4()" onmouseout="Informatingpostpointstar0()">
+                                        @csrf
+                                        <input type="hidden" value="4" name="point_score">
+                                        <button type="submit">
+                                            <i class="fas fa-star font28" id="_Informating_post_star4"></i>
+                                        </button>
+                                    </form>
+                                    <form method="post" action="{{url('home/post/'.$post->id.'/score')}}" onmouseover="Informatingpostpointstar5()" onmouseout="Informatingpostpointstar0()">
+                                        @csrf
+                                        <input type="hidden" value="5" name="point_score">
+                                        <button type="submit">
+                                            <i class="fas fa-star font28" id="_Informating_post_star5"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            @endif
+                        @endauth
+                        @guest()
+                                <div class="_Informating_post_point">
+                                    <form onmouseover="Informatingpostpointstar1()" onmouseout="Informatingpostpointstar0()">
+                                        @csrf
+                                        <input type="hidden" value="1" name="point_score">
+                                        <button type="button">
+                                            <i class="fas fa-star font28" id="_Informating_post_star1" onmouseover="Informatingpostpointstar1()"></i>
+                                        </button>
+                                    </form>
+                                    <form onmouseover="Informatingpostpointstar2()" onmouseout="Informatingpostpointstar0()">
+                                        @csrf
+                                        <input type="hidden" value="2" name="point_score">
+                                        <button type="button">
+                                            <i class="fas fa-star font28" id="_Informating_post_star2"></i>
+                                        </button>
+                                    </form>
+                                    <form onmouseover="Informatingpostpointstar3()"  onmouseout="Informatingpostpointstar0()">
+                                        @csrf
+                                        <input type="hidden" value="3" name="point_score">
+                                        <button type="button">
+                                            <i class="fas fa-star font28" id="_Informating_post_star3"></i>
+                                        </button>
+                                    </form>
+                                    <form onmouseover="Informatingpostpointstar4()" onmouseout="Informatingpostpointstar0()">
+                                        @csrf
+                                        <input type="hidden" value="4" name="point_score">
+                                        <button type="button">
+                                            <i class="fas fa-star font28" id="_Informating_post_star4"></i>
+                                        </button>
+                                    </form>
+                                    <form onmouseover="Informatingpostpointstar5()" onmouseout="Informatingpostpointstar0()">
+                                        @csrf
+                                        <input type="hidden" value="5" name="point_score">
+                                        <button type="button">
+                                            <i class="fas fa-star font28" id="_Informating_post_star5"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            @endguest
 
 
+                        <div class="font17 _Informating_post_point_text">
+                                <span>میانگین</span>
 
-
-
+                                &nbsp;{{$avg}}&nbsp;
+                                <span>امتیاز از مجموعه تعداد</span>
+                                &nbsp;{{$isScore}}&nbsp;
+                                <span>رای</span>
+                        </div>
                     </div>
                 </div>
 
@@ -31,7 +185,7 @@
                                 <div class="col-4 _Margin_padding">
                                     <div class="_Informating_post_statistics_time">
                                         <i class="fal fa-calendar-alt font36"></i>
-                                        <h6 class="font17"><b>زمان انتشار</b></h6>
+                                        <h6 class="font17">زمان انتشار</h6>
                                         <p class="font19"><b>
                                            @php
                                             $datetime = \Hekmatinasser\Verta\Verta::instance($post->created_at);
@@ -39,21 +193,21 @@
                                                 $date = $result[0];
                                                 echo $date;
                                            @endphp
-                                        </b></p>
+                                           </b></p>
                                     </div>
                                 </div>
                                 <div class="col-4 _Margin_padding">
                                     <div class="_Informating_post_statistics_like">
                                         <i class="fas fa-heart font36"></i>
-                                        <h6 class="font17"><b>تعداد لایک</b></h6>
+                                        <h6 class="font17">تعداد لایک</h6>
                                         <p class="font19"><b>{{$post->like}}</b></p>
                                     </div>
                                 </div>
                                 <div class="col-4 _Margin_padding">
                                     <div class="_Informating_post_statistics_comment">
                                         <i class="fas fa-eye font36"></i>
-                                        <h6 class="font17"><b>تعداد بازدید</b></h6>
-                                        <p class="font19"><b>20366</b></p>
+                                        <h6 class="font17">تعداد بازدید</h6>
+                                        <p class="font19"><b>{{$post->views}}</b></p>
                                     </div>
                                 </div>
                             </div>

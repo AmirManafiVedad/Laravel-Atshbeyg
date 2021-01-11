@@ -1,12 +1,14 @@
 /************** Informatinguser **************/
 
 ._Informating_user{
-    height: 565px;
+    height: 625px;
     width: 90%;
     margin: 20px 5%;
-    background: url("../../Image/Wood/25.png");
+    background: #090c0d;
+    box-shadow:0 6px 20px 2px rgba(22, 27, 28, 0.93);
     background-size: 100% 650px;
-    border-radius: 20px;
+    border-bottom: 2px solid #4e9b4e;
+    border-radius: 5px;
 }
 ._Informating_user_pic{
     width: 100%;
@@ -15,7 +17,6 @@
 ._Informating_user_img{
     width: 50%;
     height: 200px;
-    /*background: url("../../Image/Wood/16.png");*/
     background-size: 100% 200px;
     margin: 0 auto;
     margin-top: 15px;
@@ -23,20 +24,20 @@
 }
 ._Informating_user_img > img{
     height: 200px;
+    width: 200px;
     border-radius: 50%;
-    width: 90%;
+    box-shadow:0 6px 50px 10px rgba(22, 27, 28, 0.93);
     margin: 0 auto;
     padding: 15px 0;
     display:block;
 }
 ._Informating_user_p{
-    width: 80%;
+    width: 50%;
     height: 60px;
     text-align: center;
     color: white;
     margin: 0 auto;
     margin-top: 10px;
-    background: url("../../Image/Wood/24.png");
     background-size: 100% 60px;
 }
 ._Informating_user_p > p{
@@ -44,23 +45,25 @@
 }
 ._Informating_user_data_style{
     width: 100%;
-    height: 80px;
-    margin: 0 auto;
+    height: 50px;
+    margin: 10px auto;
     transition: all ease 0.5s;
     color: white;
-    background: url("../../Image/Wood/13.png");
     background-size: 100% 80px;
+    border: none;
+    border-bottom: 2px solid #4e9b4e;
 }
-._Informating_user_data_style :hover{
-
+._Informating_user_data_style:hover{
+    background: #1f1f1f;
+    border: none;
+    border-right: 2px solid #4e9b4e;
 }
 ._Informating_user_data_style > a{
     width: 100%;
     height: 100%;
-    line-height: 35px;
     text-align: center;
     display: block;
-    padding: 32.5px 0;
+    line-height: 45px;
 }
 
 ._Informating_user_post{

@@ -6,11 +6,10 @@
                 <div class="_Post_title">
                     <h2 class="font35"><b>{{$post->title}}</b></h2>
                 </div>
-                <div class="_Post_categories font18">
-                    <span class="font19">دسته بندی ها :</span>
+                <div class="_Post_categories font19">
+                    <span class="font20">دسته بندی ها&nbsp; :&nbsp;</span>
                     @foreach($post->categories as $categories)
-                        {{$categories->title}}
-                        <span class="font16"> - </span>
+                        #&nbsp;{{$categories->title}}&nbsp;
                     @endforeach
                 </div>
                 <div class="_Post_image">

@@ -14,19 +14,19 @@
             <ul>
 
                 <li>
-                    <i class="far fa-plus-circle font20 _Menu_left _Menu_left_i"></i>
+                    <i class="far fa-handshake font20 _Menu_left _Menu_left_i"></i>
                     <a href="" class="font17">تبلیغات</a>
                 </li>
                 <li>
-                    <i class="far fa-projector font20 _Menu_left _Menu_left_i"></i>
+                    <i class="far fa-newspaper font20 _Menu_left _Menu_left_i"></i>
                     <a href="" class="font17">خبر فوری</a>
                 </li>
                 <li>
-                    <i class="far fa-plus-circle font20 _Menu_left _Menu_left_i"></i>
+                    <i class="far fa-tv-retro font20 _Menu_left _Menu_left_i"></i>
                     <a href="" class="font17">پیشنهادات</a>
                 </li>
                 <li>
-                    <i class="far fa-plus-circle font20 _Menu_left _Menu_left_i"></i>
+                    <i class="far fa-projector font20 _Menu_left _Menu_left_i"></i>
                     <a href="" class="font17">اسلاید شو</a>
                 </li>
                 <li>

@@ -5,6 +5,7 @@
     <meta name="description" content="{{$post->meta_description}}">
     <meta name="keyword" content="{{$post->meta_key_words }}">
     <meta name="" content="">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="{{url('Bootstrap/bootstrap.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url('css/font-yekan.css')}}">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="{{url('Css/posts/postinformation.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url('Css/posts/posttitle.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url('Css/posts/userinformation.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url('Css/posts/comment.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url('FontAwesome/css/all.min.css')}}">
 </head>
 <body>
@@ -42,7 +44,7 @@
 
             @include('frontend.post.post-index.posttitle')
 
-            @include('frontend.post.post-index.score')
+{{--            @include('frontend.post.post-index.score')--}}
 
                 @include('frontend.post.post-index.comments');
             </div>

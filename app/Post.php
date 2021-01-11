@@ -34,4 +34,7 @@ class Post extends Model
     public function comments(){
         return $this->hasMany(Comment::class);
     }
+    public function pointusers(){
+        return $this->belongsToMany(User::class);
+    }
 }
