@@ -25,27 +25,38 @@
 }
 
 
-._Informating_post_point{
+._Informating_post_score{
     height: 50px;
     width: 100%;
     margin-top: 10px;
     padding: 0 5%;
     display: inline-block;
     text-align: center;
-}
-._Informating_post_point > form{
     display: inline-block;
 }
-._Informating_post_point > form > button{
+._Informating_post_score>button{
     background: none;
     margin-right:-5px ;
     padding: 0 5px;
 }
-._Informating_post_point > form > button > i {
+._Informating_post_score>button>i{
+    color: white;
+    padding: 0 3px;
+    margin : 10px -2.5px 0 -2.5px;
+}
+._Informating_post_score > form{
+    display: inline-block;
+}
+._Informating_post_score > form > button{
+    background: none;
+    margin-right:-5px ;
+    padding: 0 5px;
+}
+._Informating_post_score > form > button > i {
     color: white;
     margin-top: 10px;
 }
-._Informating_post_point_text{
+._Informating_post_score_text{
     height: 50px;
     width: 100%;
     margin: 10px auto;
@@ -53,8 +64,8 @@
     padding-top: 5px;
     color: #4e9b4e;
 }
-._Informating_post_point_text>span{
-    color: white;
+._Informating_post_score_text>span{
+    color: #dadada;
 }
 
 /**************** statistics ****************/
@@ -165,39 +176,52 @@
 }
 
 /**************** model-like ****************/
+._Model{
+    background: #090c0d;
+    box-shadow:0 6px 20px 2px rgba(22, 27, 28, 0.93);}
+._Model_header{
+    border-bottom: 2px solid #214c21;
+}
 ._Model_title{
     color: #1c7430;
 }
 ._Model_text{
     margin: 5px 7.5px;
+    color: #d0d0d0;
 }
 ._Btn_like{
     color: #739f6f;
 }
-._Btn_like:hover{
+._Model_footer{
+    border-top: 2px solid #214c21;
+}
+._Btn_close{
+    color: #1c7430;
+}
+._Btn_close:hover{
     color: #567452;
 }
-._Btn_like_model{
+._Btn_model{
     background: #1c7430;
     padding: 10px 30px;
     border: 1px solid #40ad47;
 }
-._Btn_like_model > a{
+._Btn_model > a{
     text-decoration: none;
     color: white;
 }
-._Btn_like_model:hover{
+._Btn_model:hover{
     background: #40ad47;
     border: 1px solid #1c7430;
     text-decoration: none;
 
 }
-._Btn_like_model_close{
+._Btn_model_close{
     background: #567452;
     padding: 10px 30px;
     border: 1px solid #739f6f;
 }
-._Btn_like_model_close:hover{
+._Btn_model_close:hover{
     background: #739f6f;
     border: 1px solid #567452;
 

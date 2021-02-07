@@ -1,0 +1,171 @@
+._Header_top{
+    width: 100%;
+    height: 80px;
+    background: #090c0d;
+    box-shadow:0 6px 20px 2px rgba(22, 27, 28, 0.93);
+}
+/******  Header top ******/
+
+/******  Logo And Title ******/
+._Title_profile{
+    width: 90%;
+    margin-right: 7.5%;
+    height: 80px;
+}
+._Title_profile>span{
+    color: #cdcdcd;
+    line-height: 75px;
+}
+
+/******  Alert ******/
+._Profile_header_alert{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    margin: 10px auto;
+}
+._Profile_header_alert>button{
+    margin: 0 5px;
+    box-sizing: border-box;
+    background: none;
+    font-size: inherit;
+    font-size: 25px;
+    padding: 7.5px 15px;
+    color: #cdcdcd;
+    border: 0;
+    position: relative;
+    vertical-align: middle;
+}
+._Profile_header_alert>button:before, ._Profile_header_alert>button:after{
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+._Profile_icon_scoials{
+    width: 55px;
+    height: 55px;
+}
+._Profile_icon_scoials:before,._Profile_icon_scoials:after{
+    top: 0;
+    left: 0;
+}
+._Profile_icon_scoials:before{
+    border: 2px solid transparent;
+}
+._Profile_icon_scoials:hover:before{
+    border-top-color: #4ca44b;
+    border-right-color: #4ca44b;
+    border-bottom-color: #4ca44b;
+    transition: border-top-color linear,border-right-color 0.15s linear 0.1s,
+    border-bottom-color 0.15s linear 0.2s;
+}
+._Profile_icon_scoials:after{
+    border: 0 solid transparent;
+}
+._Profile_icon_scoials:hover:after{
+    border-top:2px solid #4ca44b;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    transform: rotate(270deg);
+    transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
+}
+._Profile_icon_round{
+    border-radius: 100%;
+    box-shadow: none;
+}
+._Profile_icon_round:before ,._Profile_icon_round:after{
+    border-radius: 100%;
+}
+#_Profile_header_icon:after{
+    content: ' ';
+    width: 7.5px;
+    height: 7.5px;
+    background: #2cc100;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 12.5px;
+}
+#_Profile_setting_icon{
+    animation: spin 9s linear infinite;
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+/******  Information And Logout ******/
+._Logout_user{
+    width: 92.5%;
+    height: 80px;
+    display: inline-block;
+    margin-right: 5%;
+}
+._Logout_user>a{
+    text-decoration: none;
+}
+._Logout_user>a>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 75px;
+    margin-right: 5%;
+}
+._Logout_user>span {
+    color: white;
+    height: 80px;
+    padding-right: 10px;
+    line-height: 75px;
+}
+._Logout_user_ul{
+    width: 80%;
+    height: 120px;
+    margin-top: 5px;
+    background: #090c0d;
+    box-shadow:0 6px 20px 0 rgba(22, 27, 28, 0.93);
+    display: none;
+}
+._Logout_user_ul>ul>li{
+    width: 90%;
+    height: 60px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-bottom: 1px solid #5a6268;
+}
+._Logout_user_ul>ul>li>i{
+    color: #4ca44b;
+    line-height: 60px;
+}
+._Logout_user_ul>ul>li>a{
+    width: 95%;
+    height: 50px;
+    color: #cdcdcd;
+    line-height: 50px;
+    margin-right: 5%;
+    position: relative;
+    bottom: 5px;
+    text-decoration: none;
+    background: none;
+}
+._Logout_user_ul>ul>li>form>i{
+    color: #4ca44b;
+    line-height: 60px;
+}
+._Logout_user_ul>ul>li>form>button{
+    width: 95%;
+    height: 50px;
+    color: #cdcdcd;
+    line-height: 50px;
+    margin-right: 5%;
+    position: relative;
+    bottom: 20px;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+ }

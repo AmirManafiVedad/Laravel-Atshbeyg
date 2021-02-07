@@ -72,8 +72,8 @@
 
         <div class="col-3 _Post_header_search">
             <form method="get" action="{{url('post/search')}}">
-                    <input type="search" name="title" class="font16 _Post_header_search_input" id="" placeholder="متن مورد نظر خود را جستوجو کنید ...">
-                    <button type="submit"><i class="far fa-search _Post_header_search_i"></i></button>
+                    <input type="search" name="title" class="font16" id="" placeholder="متن مورد نظر خود را جستوجو کنید ...">
+                    <i class="far fa-search _Post_header_search_i"></i>
             </form>
         </div>
 

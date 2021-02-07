@@ -89,40 +89,65 @@
 ._Post_header_search{
     display: inline-block;
 }
-._Post_header_search_i{
-    display: inline-block;
+._Post_header_search>form{
+    position: relative;
+}
+._Post_header_search>form>input{
+    background: #4ca44b;
+    border: none;
+    background: transparent;
+    outline: none;
+    line-height: 50px;
+    width: 80%;
+    transform: scale(0);
+    transition: 0.5s;
+    color: white;
+}
+._Post_header_search>form>i{
     height: 55px;
     width: 12.5%;
     background: rgb(22,27,28);
     text-align: center;
-    border-top-left-radius: 10px ;
-    border-bottom-left-radius: 10px ;
+    border-radius: 50% ;
     position: absolute;
-    left: 7.5%;
-    padding: 18px 0;
-    font-size: 17px;
-    border: 2px solid rgb(22,27,28);
-    color: white;
-    margin-top: 1px;
-    transition: all ease 1s;
+    right: 5%;
+    top:18px;
+    color: #4ca44b;
+    transition: 1s;
+    cursor: pointer;
 }
-._Post_header_search_i:hover{
+._Post_header_search>form>input{
     background: #4ca44b;
-    transition: all ease 1s;
-    border: 2px solid #4ca44b;
+    border: none;
+    background: transparent;
+    outline: none;
+    line-height: 50px;
+    width: 80%;
+    transform: scale(0.1);
+    transition: 1s;
+    color: white;
+    margin-top: 15px;
 }
-._Post_header_search_input{
-    display: inline-block;
-    width: 87.5%;
-    height: 55px;
-    margin: 20px 0;
-    padding: 10px 10px;
-    border-top-right-radius: 10px ;
-    border-bottom-right-radius: 10px ;
-    position: absolute;
-    border: 2px solid #090c0d;
+._Post_header_search>form>i:before{
+    font-size: 19px;
+    line-height: 50px;
+    transition: 1s;
 }
-
+._Post_header_search input:focus{
+    transform: scale(1);
+}
+._Post_header_search>form>input:focus+i{
+    right: 0;
+    left: 0;
+    width: 80%;
+    border-radius: 0;
+    height: 3px;
+    background: #154800;
+    transform: translate(0,50px);
+}
+._Post_header_search>form>input:focus+i:before{
+    font-size: 0;
+}
 /************* Filter Post *************/
 
 ._Filter_post{
@@ -188,44 +213,78 @@
     background: #090c0d;
     box-shadow:0 6px 20px 2px rgba(22, 27, 28, 0.93);
     clear: both;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: all ease 1s;
+    overflow: hidden;
+}
+._Post_home:before{
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 50%;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+}
+._Post_home:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 3px;
+    width: 50%;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+}
+._Post_home:hover:before{
+    border-color: #4ca44b;
+    height:40%;
+    transform: translateX(0);
+    transition: 0.5s transform linear,0.5s height linear 0.5s;
+}
+._Post_home:hover:after{
+    border-color: #4ca44b;
+    height:40%;
+    transform: translateX(0);
+    transition: 0.5s transform linear,0.5s height linear 0.8s;
 }
 ._Post_home:hover{
-    box-shadow:0 5px 12px 0 rgb(76, 164, 75);
+    box-shadow:0 6px 20px 2px rgba(40, 58, 38, 0.93);
     transition: all ease 1s;
-    opacity: 1;
+    transform: scale(1.06);
 }
 
 /**/
 
 ._Post_home_img{
-    width: 100%;
+    width: 90%;
     height: 225px;
     overflow: hidden;
+    padding-top: 5%;
+    margin: 0 5%;
 }
 ._Post_home_img img{
     width: 100%;
-    height: 225px;
+    height: 100%;
     background: black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     transition: all ease-out 0.5s;
 }
 ._Post_home_img:hover ._Post_home_img_col{
     transition: all ease 1s;
-    top: -225px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    top: -205px;
 }
 ._Post_home_img_col{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.60);
     position: relative;
-    top: -450px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    top: 0;
+    right: 0;
     transition: all ease 1s;
 }
 ._Post_home_img_icon{
@@ -329,7 +388,7 @@
 }
 /**/
 ._Post_home_text{
-    padding: 7.5px 7.5px;
+    padding: 7.5px 5%;
 }
 ._Post_home_text h5{
     color: #FFFFFF;

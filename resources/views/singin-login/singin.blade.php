@@ -1,4 +1,4 @@
-@extends('Login/layouts/pagelogin')
+@extends('singin-login.index-auth')
 
 @section('content')
     <section id="Login">

@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>صفحه لاگین روستای آتش بیگ</title>
-    <link rel="stylesheet" type="text/css" href="../../Css/font-yekan.css">
-    <link rel="stylesheet" type="text/css" href="../../FontAwesome.Pro.5.15.1/css/all.css">
-    <link rel="stylesheet" type="text/css" href="../../Css/Login.css">
+    <link rel="stylesheet" type="text/css" href="{{url('Css/font-yekan.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url('FontAwesome/css/all.css')}}../../">
+    <link rel="stylesheet" type="text/css" href="{{url('Css/Login.css')}}">
 </head>
 <body>
 
-<img class="Login-background" src="../Image/13.png">
+<img class="Login-background" src="{{url('Image/13.png')}}">
     <div class="Login">
         <div class="Login-img">
-            <img class="Login-img-img" src="../Image/Login-image.jpg">
+            <img class="Login-img-img" src="{{url('Image/Login-image.jpg')}}">
             <div class="Img-login-text">
                 <p class="Img-login-text-p1 font28">وب سایت روستای آتش بیگ</p>
                 <p class="Img-login-text-p2 font20">روستای گردشگری آتش بیگ شهرستان هشترود استان آذربایحان شرقی اولین وب سایت تخصصی طبیعتی و گردشگری کشور </p>
                 <p class="Img-login-text-p2 font20" id="Img-login-text-p2"> برای دسترسی به بخش های مهم سایت ثبت نام کنید ...</p>
-                <a href="Sildeshow.html" class="Img-login-text-a font16">بازگشت</a>
+                <a href="{{url('/home')}}" class="Img-login-text-a font16">بازگشت</a>
             </div>
                 <div class="Login-name">
                     <ul>
-                        <li class="Login-li"><a href="{{url('login/Login/singin')}}" class="font16" onclick="Login()" id="Loginli">ثبت نام</a></li>
-                        <li class="Login-li"><a href="{{url('login/Login/Login')}}" class="font16" onclick="Singin()" id="Singinli">ورود</a></li>
+                        <li class="Login-li"><a href="{{url('register')}}" class="font16" onclick="Login()" id="Loginli">ثبت نام</a></li>
+                        <li class="Login-li"><a href="{{url('login')}}" class="font16" onclick="Singin()" id="Singinli">ورود</a></li>
                     </ul>
                 </div>
         </div>
@@ -32,7 +32,7 @@
             <!---------------------------    Sing in     --------------------------->
 
 
-        @yield('singin')
+        @yield('content')
 
 
         </div>
@@ -69,10 +69,6 @@
     var Singinn =document.getElementById('Singin');
     //////////////////////////// Login ////////////////////////////
     function Login() {
-        Loginnli.style.width="130";
-        Loginnli.style.transition="all ease 0.5s";
-        Loginn.style.display="block";
-        Singinn.style.display="none";
     }
     function Logininput() {
         //////////////////////////////////////////////////////////////////////
@@ -130,10 +126,6 @@
     }
     //////////////////////////// Singin ////////////////////////////
     function Singin() {
-        Singinnli.style.width="130px";
-        Singinnli.style.transition="all ease 0.5s";
-        Loginn.style.display ="none";
-        Singinn.style.display="block";
     }
     function Singininput() {
         //////////////////////////////////////////////////////////////////////

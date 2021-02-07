@@ -24,8 +24,14 @@ class PostIndexController extends Controller
             ->where('post_id',$post_id)->count();
 
         $isScore=DB::table('post_user_point')->where('post_id',$post_id)->count();
+        $score_1=DB::table('post_user_point')->where('post_id',$post_id)->where('point',1)->count();
+        $score_2=DB::table('post_user_point')->where('post_id',$post_id)->where('point',2)->count();
+        $score_3=DB::table('post_user_point')->where('post_id',$post_id)->where('point',3)->count();
+        $score_4=DB::table('post_user_point')->where('post_id',$post_id)->where('point',4)->count();
+        $score_5=DB::table('post_user_point')->where('post_id',$post_id)->where('point',5)->count();
         $avgScore=DB::table('post_user_point')->where('post_id',$post_id)->avg('point');
-        return view('frontend.post.post-index.post' , compact('comments' ,'post', 'isLiked', 'isScore','avgScore'));
+        return view('frontend.post.post-index.post' , compact('comments' ,'post', 'isLiked', 'isScore','avgScore',
+            'score_1','score_2','score_3','score_4','score_5'));
     }
 
     public function storeLikes($id){
@@ -66,10 +72,8 @@ class PostIndexController extends Controller
             return back();
         }else{
             $point_post= Post::find($id);
-            $point_post->pointusers()->attach($userid);
-            $point_post->pointusers()->attach($request->input('point_score'));
-            dd($point_post->point);
-
+            $point_post->points()->attach($userid, ['point' => $request->input('point_score')]);
+            return back();
         }
 
 

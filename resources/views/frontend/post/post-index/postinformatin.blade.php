@@ -1,5 +1,5 @@
 @php
-    $avg=intval($avgScore);
+    $avg = sprintf("%01.2f", $avgScore);
 @endphp
     <div class="row">
         <div class="col-12">
@@ -47,7 +47,7 @@
                                         }
                                     </style>
                                 @endif
-                                <div class="_Informating_post_point">
+                                <div class="_Informating_post_score">
                                     <form method="post" action="{{url('home/post/'.$post->id.'/score')}}" onmouseover="Informatingpostpointstar1()" onmouseout="Informatingpostpointstar0()">
                                         @csrf
                                         <input type="hidden" value="1" name="point_score">
@@ -85,7 +85,7 @@
                                     </form>
                                 </div>
                             @else
-                                <div class="_Informating_post_point">
+                                <div class="_Informating_post_score">
                                     <form method="post" action="{{url('home/post/'.$post->id.'/score')}}" onmouseover="Informatingpostpointstar1()" onmouseout="Informatingpostpointstar0()">
                                         @csrf
                                         <input type="hidden" value="1" name="point_score">
@@ -125,53 +125,49 @@
                             @endif
                         @endauth
                         @guest()
-                                <div class="_Informating_post_point">
-                                    <form onmouseover="Informatingpostpointstar1()" onmouseout="Informatingpostpointstar0()">
-                                        @csrf
-                                        <input type="hidden" value="1" name="point_score">
-                                        <button type="button">
+                                <div class="_Informating_post_score" onmouseout="Informatingpostpointstar0()">
+                                    <button type="button" data-toggle="modal" data-target="#add_score">
                                             <i class="fas fa-star font28" id="_Informating_post_star1" onmouseover="Informatingpostpointstar1()"></i>
-                                        </button>
-                                    </form>
-                                    <form onmouseover="Informatingpostpointstar2()" onmouseout="Informatingpostpointstar0()">
-                                        @csrf
-                                        <input type="hidden" value="2" name="point_score">
-                                        <button type="button">
-                                            <i class="fas fa-star font28" id="_Informating_post_star2"></i>
-                                        </button>
-                                    </form>
-                                    <form onmouseover="Informatingpostpointstar3()"  onmouseout="Informatingpostpointstar0()">
-                                        @csrf
-                                        <input type="hidden" value="3" name="point_score">
-                                        <button type="button">
-                                            <i class="fas fa-star font28" id="_Informating_post_star3"></i>
-                                        </button>
-                                    </form>
-                                    <form onmouseover="Informatingpostpointstar4()" onmouseout="Informatingpostpointstar0()">
-                                        @csrf
-                                        <input type="hidden" value="4" name="point_score">
-                                        <button type="button">
-                                            <i class="fas fa-star font28" id="_Informating_post_star4"></i>
-                                        </button>
-                                    </form>
-                                    <form onmouseover="Informatingpostpointstar5()" onmouseout="Informatingpostpointstar0()">
-                                        @csrf
-                                        <input type="hidden" value="5" name="point_score">
-                                        <button type="button">
-                                            <i class="fas fa-star font28" id="_Informating_post_star5"></i>
-                                        </button>
-                                    </form>
+                                            <i class="fas fa-star font28" id="_Informating_post_star2" onmouseover="Informatingpostpointstar2()"></i>
+                                            <i class="fas fa-star font28" id="_Informating_post_star3" onmouseover="Informatingpostpointstar3()"></i>
+                                            <i class="fas fa-star font28" id="_Informating_post_star4" onmouseover="Informatingpostpointstar4()"></i>
+                                            <i class="fas fa-star font28" id="_Informating_post_star5" onmouseover="Informatingpostpointstar5()"></i>
+                                    </button>
                                 </div>
-                            @endguest
 
 
-                        <div class="font17 _Informating_post_point_text">
-                                <span>میانگین</span>
+                                <!-- Modal -->
+                                    <div class="modal fade" id="add_score" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content _Model">
+                                                <div class="modal-header _Model_header">
+                                                    <h5 class="modal-title _Model_title font25" id="exampleModalLongTitle">خطا</h5>
+                                                    <button type="button" class="close _Btn_like" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body _Model_text font17">
+                                                    <br>
+                                                    برای افزودن امتیاز به مطلب باید وارد اکانت کاربری خود بشوید .
+                                                    <br>
+                                                    <br>
+                                                </div>
+                                                <div class="modal-footer _Model_footer">
+                                                    <button type="button" class="btn btn-secondary _Btn_model_close font16" data-dismiss="modal">بستن</button>
+                                                    <button type="button" class="btn btn-primary _Btn_model font16"><a href="{{url('/')}}">ورود</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        @endguest
 
-                                &nbsp;{{$avg}}&nbsp;
-                                <span>امتیاز از مجموعه تعداد</span>
+
+                        <div class="font18 _Informating_post_score_text">
+                                <span class="font16">میانگین</span>
+                            &nbsp;{{$avg}}&nbsp;
+                                <span class="font16">امتیاز از مجموعه تعداد</span>
                                 &nbsp;{{$isScore}}&nbsp;
-                                <span>رای</span>
+                                <span class="font16">رای</span>
                         </div>
                     </div>
                 </div>
@@ -221,7 +217,7 @@
                     <div class="col-12 _Margin_padding">
                         <div class="_Informating_post_like _Margin_padding">
                             @guest()
-                                    <button type="button" class="_Informating_post_like_buttom" data-toggle="modal" data-target="#exampleModalLong">
+                                    <button type="button" class="_Informating_post_like_buttom" data-toggle="modal" data-target="#add_like">
                                         <div class="_Informating_post_likes">
                                             <p class="font17"><b>افزودن به علاقه مندی ها</b></p>
                                             <i class="fas fa-heart font26" style="color: #d20000;"></i>
@@ -229,35 +225,28 @@
                                     </button>
 
                                         <!-- Modal -->
-                                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title _Model_title font23" id="exampleModalLongTitle">خطا کاربر</h5>
-                                                        <button type="button" class="close _Btn_like" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body _Model_text font17">
-                                                        <br>
-                                                        برای افزودن پست به علاقه مندی ها باید اکانت کاربری داشته باشید .
-                                                        <br>
-                                                        <br>
-                                                        در صورت داشتن اکانت کاربری دکمه ورود را کلیک کنید .
-                                                        <br>
-                                                        <br>
-                                                        در صورت نداشتن اکانت کاربری به دکمه ثبت نام کلیک کنید .
-                                                        <br>
-                                                        <br>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary _Btn_like_model_close font16" data-dismiss="modal">بستن</button>
-                                                        <button type="button" class="btn btn-primary _Btn_like_model font16"><a href="{{url('home')}}">ثبت نام</a></button>
-                                                        <button type="button" class="btn btn-primary _Btn_like_model font16"><a href="{{url('home')}}">ورود</a></button>
-                                                    </div>
-                                                </div>
+                                <div class="modal fade" id="add_like" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content _Model">
+                                            <div class="modal-header _Model_header">
+                                                <h5 class="modal-title _Model_title font25" id="exampleModalLongTitle">خطا</h5>
+                                                <button type="button" class="close _Btn_like" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body _Model_text font17">
+                                                <br>
+                                                برای لایک و ذخیره این مطلب در اکانت کاربری خود باید وارد اکانت کاربری خود بشوید .
+                                                <br>
+                                                <br>
+                                            </div>
+                                            <div class="modal-footer _Model_footer">
+                                                <button type="button" class="btn btn-secondary _Btn_model_close font16" data-dismiss="modal">بستن</button>
+                                                <button type="button" class="btn btn-primary _Btn_model font16"><a href="{{url('/')}}">ورود</a></button>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
                             @endguest
                             @auth()
                                 @if($isLiked)

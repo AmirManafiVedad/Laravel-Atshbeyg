@@ -1,0 +1,389 @@
+/***************************************/
+/******  Profile Information User ******/
+/***************************************/
+._Profile_panel_menu_left_user_title{
+    width: 95%;
+    margin-right: 5%;
+    height: auto;
+    background: #090c0d;
+    margin-bottom: 100px;
+}
+
+/******  Information Box Right User ******/
+._Profile_information_user_image img{
+    width: 80%;
+    margin-right: 10%;
+    margin-top: 30px;
+    height: 300px;
+    border-radius: 50%;
+    border: 10px solid #cdcdcd;
+}
+._Profile_information_user_name{
+    width: 100%;
+    height: auto;
+    color: #4ca44b !important;
+    text-align: center;
+    float: left;
+    margin-top: 30px;
+}
+._Profile_information_user_name>span{
+    line-height: 42.5px;
+
+}
+._Profile_information_user_name>p{
+    margin-top: 20px;
+    color: #cdcdcd;
+    line-height: 42.5px;
+}
+._Profile_information_user_social_networks>a{
+    padding: 8px;
+}
+/******  Information Box Left User ******/
+._Profile_information_user_box_title{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #4ca44b !important;
+    padding-right: 10px;
+    border-right: 2px solid #4ca44b;
+}
+._Profile_information_user_box_label{
+    color: #4ca44b;
+}
+._Profile_information_user_box_value{
+    color: #cdcdcd;
+}
+._Profile_information_user_box_honor>p{
+    color: #cdcdcd;
+    text-align: justify;
+    padding-left: 7.5%;
+}
+
+
+/***************************************/
+/******  Information User Insert ******/
+/***************************************/
+._Profile_panel_menu_left_user_insert{
+    width: 95%;
+    margin-right: 5%;
+    height: auto;
+    background: #090c0d;
+    margin-bottom: 100px;
+}
+._Profile_update_information_user{
+    width: 90%;
+    height: auto;
+    margin: 0 5%;
+}
+._Profile_update_information_user>h2{
+    padding: 15px 20px 20px 0;
+    border-bottom: 2px solid #4ca44b;
+    color: #4ca44b;
+}
+._Profile_update_information_user>form{
+    width: 95%;
+    margin: 30px 5% 0 ;
+}
+._Profile_update_information_user>form label{
+    color: #4ca44b;
+    padding: 15px 15px;
+}
+._Profile_update_information_user>form input{
+    background: #181818;
+    padding: 7.5px 10px;
+    color: #cdcdcd;
+    width: 90%;
+}
+._Profile_update_information_user>form textarea{
+    background: #181818;
+    padding: 10px 10px;
+    color: #cdcdcd;
+    width: 95%;
+    height: 250px;
+}
+._Profile_information_data>select{
+    width: 85%;
+    height: 40px;
+    margin-left: 5%;
+    background: #181818;
+    color: #cdcdcd;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+._Profile_information_data:before{
+    content: '\f358';
+    font-family: "Font Awesome 5 Pro";
+    position: absolute;
+    float: left;
+    left: 5%;
+    top: 0;
+    width: 22.5%;
+    height: 40px;
+    color: #4ca44b;
+    background: #181818;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all ease 1s;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+._Profile_information_select>select{
+    width: 85%;
+    height: 40px;
+    margin-left: 5%;
+    background: #181818;
+    color: #cdcdcd;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+._Profile_information_select:before{
+    content: '\f358';
+    font-family: "Font Awesome 5 Pro";
+    position: absolute;
+    float: left;
+    left: 5%;
+    top: 0;
+    width: 17.5%;
+    height: 40px;
+    color: #4ca44b;
+    /*background: #0f3900;*/
+    background: #181818;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all ease 1s;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+._Profile_update_information_user_button_1{
+    width: 20%;
+    height: 50px;
+    color: #cdcdcd;
+    border: 2px solid #4ca44b;
+    background: none;
+    /*background: #4ca44b;*/
+    text-align: center;
+    margin:30px 0;
+    border-radius: 5px;
+    position: relative;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+._Profile_update_information_user_button_2{
+    width: 20%;
+    height: 50px;
+    color: #cdcdcd;
+    border: 2px solid #c11200;
+    background: none;
+    /*background: #4ca44b;*/
+    text-align: center;
+    margin:30px 0;
+    border-radius: 5px;
+    position: relative;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-right: 5% !important;
+}
+
+
+/***************************************/
+/******  Information User Account ******/
+/***************************************/
+._Profile_panel_menu_left_user_account{
+    width: 95%;
+    margin-right: 5%;
+    height: auto;
+    background: #090c0d;
+    margin-bottom: 100px;
+}
+._Profile_update_information_user_account{
+    width: 90%;
+    height: auto;
+    margin: 0 5%;
+}
+._Profile_update_information_user_account>h2{
+    padding: 15px 20px 20px 0;
+    border-bottom: 2px solid #4ca44b;
+    color: #cdcdcd;
+}
+._Profile_update_information_user_account>form{
+    width: 75%;
+    height: auto;
+}
+._Profile_update_information_user_account>form>label{
+    color: #4ca44b;
+    padding: 10px 20px;
+}
+._Profile_update_information_user_account>form>input{
+    width: 100%;
+    height: 45px;
+    background: #181818;
+    padding: 7.5px 10px;
+    color: #cdcdcd;
+}
+
+
+/***************************************/
+/******  Information User Account ******/
+/***************************************/
+._Profile_panel_menu_left_user_email{
+    width: 95%;
+    margin-right: 5%;
+    height: auto;
+    background: #090c0d;
+    margin-bottom: 100px;
+}
+._Profile_update_information_user_email{
+    width: 90%;
+    height: auto;
+    margin: 0 5%;
+}
+._Profile_update_information_user_email>h2{
+    padding: 15px 20px 20px 0;
+    border-bottom: 2px solid #4ca44b;
+    color: #4ca44b;
+}
+._Profile_update_information_user_email>form{
+    width: 75%;
+    height: auto;
+}
+._Profile_update_information_user_email>form>label{
+    color: #4ca44b;
+    padding: 10px 20px;
+}
+._Profile_update_information_user_email>form>input{
+    width: 100%;
+    height: 45px;
+    background: #181818;
+    padding: 7.5px 10px;
+    color: #cdcdcd;
+}
+
+
+/***************************************/
+/******  Information User Account ******/
+/***************************************/
+._Profile_panel_menu_left_user_account{
+    width: 95%;
+    margin-right: 5%;
+    height: auto;
+    background: #090c0d;
+    margin-bottom: 100px;
+}
+._Profile_update_information_user_account{
+    width: 90%;
+    height: auto;
+    margin: 0 5%;
+}
+._Profile_update_information_user_account>h2{
+    padding: 15px 20px 20px 0;
+    border-bottom: 2px solid #4ca44b;
+    color: #4ca44b;
+}
+._Profile_update_information_user_account>form{
+    width: 75%;
+    height: auto;
+}
+._Profile_update_information_user_account>form>label{
+    color: #4ca44b;
+    padding: 10px 20px;
+}
+._Profile_update_information_user_account>form>input{
+    width: 100%;
+    height: 45px;
+    background: #181818;
+    padding: 7.5px 10px;
+    color: #cdcdcd;
+}
+
+
+/***************************************/
+/******  Information User Setting Email ******/
+/***************************************/
+._Profile_panel_menu_left_user_setting_email{
+    width: 95%;
+    margin-right: 5%;
+    height: auto;
+    background: #090c0d;
+    margin-bottom: 100px;
+}
+._Profile_update_information_user_setting_email{
+    width: 90%;
+    height: auto;
+    margin: 0 5%;
+}
+._Profile_update_information_user_setting_email>h2{
+    padding: 15px 20px 20px 0;
+    border-bottom: 2px solid #4ca44b;
+    color: #4ca44b;
+}
+._Profile_update_information_user_setting_email>h3{
+    color: #cdcdcd;
+    padding: 20px 10px;
+}
+
+._Profile_update_information_user_setting_email>div>div{
+    margin: 15px 0;
+}
+._Profile_update_information_user_setting_email>div>div>p:nth-child(1){
+    color: #cdcdcd;
+}
+._Profile_update_information_user_setting_email>div>div>p:nth-child(2){
+    color: #7b9d76;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    margin-right: 20%;
+    margin-top: 32.5px;
+}
+.switch-input {
+    display: none;
+}
+.switch-label {
+    display: block;
+    width: 100%;
+    height: 25px;
+    text-indent: -150%;
+    clip: rect(0 0 0 0);
+    color: transparent;
+    user-select: none;
+}
+.switch-label::before,
+.switch-label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+.switch-label::before {
+    width: 100%;
+    height: 100%;
+    background-color: #de1300;
+    border-radius: 9999em;
+    -webkit-transition: background-color 0.25s ease;
+    transition: background-color 0.25s ease;
+}
+.switch-label::after {
+    top: -5px;
+    left: 0;
+    width: 40%;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+    -webkit-transition: left 0.25s ease;
+    transition: left 0.25s ease;
+}
+.switch-input:checked + .switch-label::before {
+    background-color: #4ca44b;
+}
+.switch-input:checked + .switch-label::after {
+    left: 60%;
+}

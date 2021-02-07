@@ -34,7 +34,7 @@ class Post extends Model
     public function comments(){
         return $this->hasMany(Comment::class);
     }
-    public function pointusers(){
-        return $this->belongsToMany(User::class);
+    public function points(){
+        return $this->belongsToMany(PostUserPoint::class, 'post_user_point', 'post_id', 'user_id');
     }
 }

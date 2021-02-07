@@ -22,10 +22,10 @@
         </div>
         <div class="col-2 _Background_header">
                 <div class="_Header_top_power">
-                        <form method="post" action="{{url('/logout')}}">
+                    <form method="post" action="{{url('/logout')}}">
                         @csrf
+                        <i class="far fa-power-off font26"></i>
                         <button type="submit" class="_Header_top_power_buttom font22">خروج از حساب کاربری</button>
-                        <i class="far fa-power-off font22 _Header_top_power_i"></i>
                     </form>
                 </div>
         </div>

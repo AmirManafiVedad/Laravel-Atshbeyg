@@ -1,0 +1,102 @@
+/******  Panel User ******/
+._Profile_panel{
+    margin-top: 125px;
+}
+._Profile_panel_Menu{
+    margin-top: 50px;
+}
+
+/******  Panel Information User ******/
+._Profile_information_user ,._Profile_panel_user{
+    background: #090c0d;
+    height: 200px;
+    width: 100%;
+    border-width: 3px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    color: #cdcdcd;
+    transition: all ease-out 0.5s;
+    cursor: pointer;
+    /*box-shadow:0 6px 20px 2px rgba(22, 28, 20, 0.93);*/
+}
+._Profile_information_user:hover ,._Profile_panel_user:hover{
+    color: #4e9b4e;
+    transition: all ease-in 0.5s;
+}
+._Profile_user{
+    color: #4e9b4e;
+}
+._Profile_user_white{
+    color: #cdcdcd;
+}
+._Profile_information_user:after ,._Profile_panel_user:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 12.5%;
+    width: 75%;
+    height: 2px;
+    transform: translateX(0) scaleX(0);
+    transform-origin: 50% 50%;
+    transition: transform 500ms;
+    background: #4e9b4e;
+}
+._Profile_information_user:hover:after ,._Profile_panel_user:hover:after{
+    transform: translateY(50%) scaleY(1);
+}
+._Profile_information_user_after:after{
+    transform: translateY(50%) scaleY(1);
+}
+
+#_Profile_panel_user_boder{
+}
+._Profile_information_user>i ,._Profile_panel_user>i{
+    padding-top: 50px;
+}
+._Profile_information_user>p ,._Profile_panel_user>p{
+    padding-top: 20px;
+}
+
+/******  Menu Panel ******/
+._Profile_panel_menu{
+    background: #090c0d;
+    height: auto;
+    border-radius: 10px;
+}
+._Profile_panel_menu>ul{
+}
+._Profile_panel_menu>ul>li{
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px solid #4a4a4a;
+}
+._Profile_panel_menu>ul>li:last-child{
+    border: none;
+}
+._Profile_panel_menu_after:after{
+    content: '';
+    width: 3px;
+    height: 45px;
+    margin: 15px 0;
+    background: #4ca44b;
+    position: relative;
+    float: right;
+    transform: scale(1);
+}
+._Profile_panel_menu>ul>li>i{
+    color: #4ca44b;
+    line-height: 75px;
+    margin-right: 7.5%;
+}
+._Profile_panel_menu>ul>li>a{
+    text-decoration: none;
+    margin-right: 7.5%;
+    height: 50px;
+    color: #cdcdcd;
+    position: relative;
+    bottom: 4px;
+}
+
+
